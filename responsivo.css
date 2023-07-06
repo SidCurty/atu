@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    
+  }
+
+@media only screen and (max-width: 600px){
+   /* body{
+        background: blue;
+    }*/
+  
+    .nav-list {
+        position: absolute;
+       top: 8vh;
+       right: 0;
+       width: 50vw;/*LARGURA DA GUIA*/
+        height: 25vh;/*ALTURA DA GUIA*/
+       background: #23232e;/*COR DA GUIA*/
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+      transform: translateX(100%);
+       transition: transform 0.3s ease-in;
+       }
+
+
+    .logo{
+        margin: 0;
+        text-align: center;
+    }
+    .header{
+        padding-top: 5px;
+        }
+
+        .headline{
+            flex: 80%;
+            margin: 5%;
+            text-align: center;         
+        }
+       
+       
+        .img-headline{
+            flex: 100%;
+            margin: 5%;
+            text-align: center;           
+              
+        }
+
+        .headline h2{
+            font-weight: 900;
+            font-size: 30px;
+            font-family: 'Lobster', cursive;
+        }
+      .headline h3{
+            font-weight: 900;
+            font-size: 20px;
+            font-family: 'Lobster', cursive;
+        }         
+        .headline h4{
+            font-weight: 900;
+            font-size: 15px;
+            font-family: 'Lobster', cursive;
+
+        }
+
+        section h2{
+            width: 100%;
+            font-size: 30px;
+            margin: 0;
+            font-family: 'Lobster', cursive;
+          font-weight: bold;
+          color: #180f4a;
+          padding-bottom: 5%;
+          
+          }
+     
+      .card{
+        width: 85%;
+        margin: 7%;
+        text-align: center;
+        display: block;
+        height: 50%;
+                
+      }
+      
+     
+      .card1{
+        width: 85%;
+        margin: 7%;
+        text-align: center;
+        display: block;
+        height: 50%;
+      }
+      
+      .card2{
+        width: 85%;
+        margin: 7%;
+        text-align: center;
+        display: block;
+        height: 50%;
+      }    
+      
+
+      footer{
+        margin-top: 50px;
+        
+      }
+
+
+                         /*MODA*/
+
+
+.flex{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    height: 50%;
+}
+.flex img{
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+}
+
+}
+
+@media only screen and (min-width:600px){
+   /* body{
+       background: green;
+    }*/
+
+    
+        
+
+    
+}
+
+@media only screen and (min-width:768px){
+   /* body{
+        background: red;
+    }*/
+}
+
+@media only screen and (min-width:992px){
+   /* body{
+        background: yellow;
+    }*/
+}
+
+@media only screen and (min-width:1200px){
+   /* body{
+        background: violet;
+    }*/
+}
+                         /*MODA*/
+/*
+}
+
+
+@media only screen and (max-width: 600px){
+    body{
+        background: blue;
+    }
+@media only screen and (min-width:600px){
+    body{
+        background: green;
+    }
+}
+
+@media only screen and (min-width:768px){
+    body{
+        background: red;
+    }
+}
+
+@media only screen and (min-width:992px){
+    body{
+        background: yellow;
+    }
+}
+
+@media only screen and (min-width:1200px){
+    body{
+        background: violet;
+    }
+
+    
+}
+
+
+
+
+/*@media only screen and (max-widht: 600px){
+
+.servicos{
+        width: 60%;
+        margin: 10%;
+        text-align: center;
+        display: block;
+      }
+
+
+      
+    nav{
+        position: fixed;
+    }
+
+    .logo{
+        margin: 0;
+        text-align: center;
+    }
+    .header{
+        padding-top: 5px;
+        }
+        .headline{
+            flex: 100%;
+            margin: 5%;
+            text-align: center;         
+        }
+       
+       
+        .img-headline{
+            flex: 100%;
+            margin: 5%;
+            text-align: center;
+            
+              
+        }
+        
+
+        .card{
+            width: 100%;
+          
+              
+           }
+           
+           .card1{
+            width: 100%;
+           
+              
+           }
+           .card2{
+            width: 100%;
+           
+              
+           }
+
+
+
+       
+       
+    
+    
+        }
+        */
+
+
+   
+
+
+

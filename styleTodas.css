@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    
+  }
+  /*---------------------------------MENU----------------------------*/
+  a {
+    color: #fff;/*COR DS LETRAS MENU*/
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: 'Lobster', cursive;/*FONTE DA LISTA DO MENU*/
+  }
+  
+  a:hover {
+    opacity: 0.7;
+    background: #ff2978;
+    
+  }
+  
+  .logo {
+    font-size: 25px;/*katia menu*/
+    text-transform: none;
+    letter-spacing: 4px;
+    font-family: 'Lobster' cursive;
+  }
+
+  .logo:hover{
+    border: none;
+    background: #ff2978;
+ }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;/*tamanho da fonte menu*/
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #23232e;/*OR DO FUNDO MENU*/
+    height: 8vh;
+    border-bottom:  5px solid #ff2978;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    
+  }
+  
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+    
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+    
+  }
+  
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+     top: 8vh;
+     right: 0;
+     width: 50vw;/*LARGURA DA GUIA*/
+      height: 45vh;/*ALTURA DA GUIA*/
+     background: #23232e;/*COR DA GUIA*/
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+    transform: translateX(100%);
+     transition: transform 0.3s ease-in;
+     }
+      
+      
+    
+    .nav-list li{
+      margin-left: 0;
+      opacity: 0;
+      
+      
+    }
+    .mobile-menu{
+      display: block;
+      
+      
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  /*---------------------------------MENU----------------------------*/
+
+   /*--------------------------ANIMAÇÃO---------------------------------*/
+  /*texto novo*/
+  .container{
+    width: 100%;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax (250px, 1fr));
+    grid-gap: 20px;
+    margin-left: 1%;/*MARGEM DA ANIMAÇÃO */
+    margin-bottom: 5%; /*DISTÂNCIA DO PRODUTO ABAIXO*/
+    /*border: 5px solid rgb(12, 233, 226);*//*BORDA ANIMAÇÃO PRODUTO*/
+    font-family: 'Lobster', cursive;
+  }
+
+  .container:hover {
+   /* opacity: 0.9;*/
+    color: #fff;
+  }
+
+  
+
+
+.headline{
+    margin-left: 1%;/*AJUSTA TEXTO HEADLINE MODA*/
+    flex: 40%;
+    /*border: 5px solid rgb(20, 182, 31);*/ /*BORDA CABEÇALHO*/
+    margin-top: 2%;/*MARGEM DISTÂNCIA MENU*/
+    margin-bottom: 5%;/*MARGEM DISTÂNCIA ANIMAÇÃO*/
+    
+}
+
+.headline h2{
+font-weight: 900;
+font-size: 20px;
+color: #180f4a;
+margin: 0;
+padding: 0;
+
+}
+
+.headline p{
+    color: gray;
+    text-align: left;
+   padding-bottom: 40px;  
+     
+}
+
+
+@keyframes animacao{
+  0% {background-color: #ff2978; width: 1000px;}
+  20% {background-color: #f8035d; width: 1000px;}
+  40% {background-color: #180f4a; width: 500px;}
+  /*70% {background-color: #abeb15; width: 500px;}
+  100% {background-color: #88fa53; width: 700px;}
+  70% {background-color: #abeb15; width: 500px;}*/
+  40% {background-color: #180f4a; width: 500px;}
+  20% {background-color: #f8035d; width: 1000px;}
+  10% {background-color: #ff2978; width: 10px;}
+  
+  }
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+                                /*FUNDO DE TELA*/
+/*body{
+background-color: red;
+}*/
+
+                                /*FUNDO DE TELA*/
+.container{
+width: 100px;
+height: 100px;
+background-color: white;
+animation-name: animacao;
+animation-duration: 6s;
+animation-name: animacao;
+animation-duration: 6s;
+animation-delay: 1,5s;
+animation-iteration-count: infinite;
+font-size: 35px;
+text-align: center;
+font-family: 'Lobster', cursive;
+font-size: 30px;
+color: #180f4a(17, 17, 17);
+padding-top: 20px;
+padding-bottom: 60px;
+}
+
+h3{
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  }
+/*--------------------------ANIMAÇÃO---------------------------------*/
+
+
+/*--------------------------------Flexbox--------------------------------*/
+h2{
+text-align: center;
+margin-top: 100px;
+font-size: 30px;
+font-family: 'Lobster', cursive;
+}
+
+img{
+max-width: 220px;
+display: block;
+}
+
+/* CSS FLEXBOX 1 */
+/* LOCAL DE ALTERAÇÃO FLEXBOX*/
+.flex {
+display: flex;
+flex-wrap: wrap;
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+font-size: 22px;
+text-align: center;
+align-items: end;
+font-family: 'Lobster', cursive;
+font-style: italic;
+color: #9b0a80;
+padding-top: 40px;  
+margin-bottom: 5%;/*MARGEM COM O RODAPÉ*/
+}
+
+.flex > div {
+flex: 1 1 200px;
+margin: 10px;
+text-align: center;
+/*border: 5px solid #ff2978; *//*BORDA PRODUTOS*/
+/*PRODUTOS*/
+ 
+}
+.flex img{
+max-width: 220px;
+display: block;  
+transition: transform 1s;
+}
+
+.flex :hover img{
+transform: scale(1.7) rotateX(360deg)
+
+}
+
+section{
+  display: inline-block;
+  margin-top: 80px;
+  /*border: 10px solid rgb(198, 20, 20);*//*BORDA DOS PRODUTOS*/
+  /*margin-left: 5%;
+  margin-right: 5%;*/
+  /**/
+  /*height: 800px;*/
+  /**/
+  padding: 20%;
+  text-align: center;
+  width: 100%;/*90%*/
+}
+/*--------------------------------Flexbox--------------------------------*/
+
+
+/*----------------------------RODAPÉ-----------------------------------*/
+footer{
+    margin-top: 10px;
+    height: 250px;
+    background-image:linear-gradient(180deg, #ff2978, #72052d, #180f4a,black);
+    text-align:center;
+    border-top: 10px solid #180f4a;
+  }
+  .logo-rodape{
+    padding: 20px;
+  }
+  
+  .agencia{
+    font-family: 'Lobster', cursive;
+    font-size: 34px;
+    color: white;
+    padding: 0;
+  }
+  
+  .whats{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+   
+  }
+  /*----------------------------RODAPÉ-----------------------------------*/
+  
+/*-----------------------------FORMULÁRIO--------------------------------*/
+  
+
+ /* .servicos{
+    display: inline-block;
+    margin-top: 5%;
+    text-align: center;
+    
+  }
+  */
+  .card{
+    display: inline-flex;
+    width: 65%;
+    margin-left: 21%;/*AJUSTE POSÇÃO FORMULÁRIO*/
+    /**/
+    /*height: 500px;*/
+    background-color: greenyellow;
+    /**/
+    padding: 15px;
+    justify-content: center;
+    border-top:7px solid #ff2978;
+    border-bottom: 7px solid #180f4a;
+    border-left: 7px solid #ff2978;
+    border-right: 7px solid #180f4a;
+    margin-bottom: 5%;/*DISTÂNCIA MARGEM*/
+    border-radius: 20px;
+  
+    
+
+   
+    
+    /*CAIXA DE TEXTO INTERNA*/
+  }
+
+ /*----------------------------------FORMULÁRIO---------------------------*/

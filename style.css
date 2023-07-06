@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    
+  }
+                             /*MENU*/
+    a {
+                              color: #fff;
+                              text-decoration: none;
+                              transition: 0.3s;
+                              font-family: 'Lobster', cursive;
+                              
+                            }
+                            
+                            a:hover {
+                              opacity: 0.7;
+                              background: #ff2978;
+                              
+                            }
+                            
+                            .logo {
+                              font-size: 25px;/*katia menu*/
+                              text-transform: none;
+                              letter-spacing: 4px;
+                              font-family: 'Lobster' cursive;
+                            }
+                            
+                            nav {
+                              display: flex;
+                              justify-content: space-around;
+                              align-items: center;
+                              font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+                              background: #23232e;
+                              height: 8vh;
+                            }
+                            
+                                                  
+                            
+                            .nav-list {
+                              list-style: none;
+                              display: flex;
+                            }
+                            
+                            .nav-list li {
+                              letter-spacing: 3px;
+                              margin-left: 32px;
+                            }
+                            
+                            .mobile-menu {
+                              display: none;
+                              cursor: pointer;
+                            }
+                            
+                            .mobile-menu div {
+                              width: 32px;
+                              height: 2px;
+                              background: #fff;
+                              margin: 8px;
+                              transition: 0.3s;
+                            }
+                            
+                            @media (max-width: 999px) {
+                              body {
+                                overflow-x: hidden;
+                              }
+ .nav-list {
+  position: absolute;
+ top: 8vh;
+ right: 0;
+ width: 50vw;/*LARGURA DA GUIA*/
+  height: 45vh;/*ALTURA DA GUIA*/
+ background: #23232e;/*COR DA GUIA*/
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-around;
+transform: translateX(100%);
+ transition: transform 0.3s ease-in;
+ }
+                              .nav-list li {
+                                margin-left: 0;
+                                opacity: 0;
+                              }
+                              .mobile-menu {
+                                display: block;
+                              }
+                            }
+                            
+                            .nav-list.active {
+                              transform: translateX(0);
+                            }
+                            
+                            @keyframes navLinkFade {
+                              from {
+                                opacity: 0;
+                                transform: translateX(50px);
+                              }
+                              to {
+                                opacity: 1;
+                                transform: translateX(0);
+                              }
+                            }
+                            
+                            .mobile-menu.active .line1 {
+                              transform: rotate(-45deg) translate(-8px, 8px);
+                            }
+                            
+                            .mobile-menu.active .line2 {
+                              opacity: 0;
+                            }
+                            
+                            .mobile-menu.active .line3 {
+                              transform: rotate(45deg) translate(-5px, -7px);
+                            }
+                            /*MENU*/
+
+                            /*HEADER*/
+   .header{
+    /*height: 600px;*//*ajuste tamanho dos card*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding-top: 0;
+    /*border: 5px solid rgb(236, 17, 17);*/ /*BORDA DO HEADER*/
+  }
+
+  .headline{
+    margin-left: 0;/*ajuste header*/
+    flex: 30%;    
+  /*border: 1px solid black;*//*BORDA TEXTO HEADLINE*/
+  }
+
+  .img-headline{
+    margin: 0%; /*DISTÂNCIA ENTRE O TEXTO E A MARGEM INFERIOR*/
+    /*flex: 30%;
+    border: 1px solid rgb(233, 12, 12);*//*BORDA IMAGEM HEADLINE*/
+    text-align: center; /*ajuste imagem logo*/
+   /* background: #23232e;*/
+    
+    
+  }
+
+  .headline h2{
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+    color: #180f4a;
+    font-family: 'Lobster', cursive;
+    padding: 0;
+    }
+
+    .headline h3{
+      font-weight: 900;
+      font-size: 30px;
+      text-align: center;
+      color: #180f4a;
+      font-family: 'Lobster', cursive;
+      padding: 0;
+      }
+
+      .headline h4{
+        font-weight: 900;
+        font-size: 20px;
+        text-align: center;
+        color: #180f4a;
+        font-family: 'Lobster', cursive;
+        padding: 0;
+        }
+
+  .interno{
+text-align: center;
+text-transform: uppercase;
+
+
+
+  }
+.headline p{
+  color: #180f4a;
+  font-weight: 700;
+  font-size: 30px;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  padding: 5px;
+  margin-left: 5%;
+}
+
+
+                              /*HEADER*/
+
+
+ /**/
+ 
+ body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+section{
+  display: inline-block;
+  margin-top: 0;/*margem da section para o header*/
+ /*border: 10px solid rgb(205, 13, 13);*/ /* BORDA CARDS*/
+  /*margin-left: 5%;
+  margin-right: 5%;*/
+  /**/
+  height: 800px;
+  /**/
+  padding: 0%;/*DISTÂNCIA ENTRE O TEXTO E A MARGEM SUPERIOR*/
+  text-align: center;
+  width: 100%;/*90%*/
+ 
+}
+section h2{
+  width: 100%;
+  font-size: 50px;
+  margin: 0;
+  font-family: 'Lobster', cursive;
+font-weight: bold;
+color: #180f4a;
+padding-bottom: 5%;
+
+}
+
+.servicos{
+  display: inline-block;
+  margin-top: 5%;
+  
+}
+.card{
+  display: inline-block;
+  width: 30%;
+  /**/
+  height: 500px;
+  background-color: greenyellow;
+  /**/
+  padding: 20px;
+  margin: 1%;
+  border:5px solid #ff2978;/*BORDA DOS CARDS*/
+  border-radius: 20px;
+}
+
+/**/
+.card1{
+  display: inline-block;
+  width: 30%;
+  /**/
+  height: 500px;
+  background-color: greenyellow;
+  /**/
+  padding: 20px;
+  margin: 1%;
+  border: 5px solid #ff2978;
+  border-radius: 20px;
+}
+
+.card2{
+  display: inline-block;
+  width: 30%;
+  /**/
+  height: 500px;
+  background-color: greenyellow;
+  /**/
+  padding: 20px;
+  margin: 1%;
+  border:5px solid #ff2978;
+  border-radius: 20px;
+  
+}
+/**/
+
+
+/*.texto-oculto{
+  display: none;
+}
+.card:hover{
+  background: #ff2978;
+  color: white;
+  padding: 40px;
+}
+
+.card:hover img{
+  display: none;
+  
+}
+
+.card:hover .card-text{
+  display: none;
+}
+
+.card:hover .texto-oculto{
+  display: block;
+}*/
+
+
+
+footer{
+  /*margin-top: 100px;*/
+  height: 250px;
+  background-image:linear-gradient(180deg, #ff2978, #72052d, #180f4a,black);
+  text-align:center;
+  border-top: 10px solid #180f4a;
+}
+.logo-rodape{
+  padding: 20px;
+}
+
+.agencia{
+  font-family: 'Lobster', cursive;
+  font-size: 34px;
+  color: white;
+}
+
+.whats{
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+ 
+}
